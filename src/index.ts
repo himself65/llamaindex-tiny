@@ -2,7 +2,6 @@ import { readdir, stat, readFile } from 'node:fs/promises'
 import { extname } from 'node:path'
 import { createHash } from 'node:crypto'
 import memoize from 'memoize'
-import { pipeline } from 'node:stream/promises'
 
 export async function * walk (dirPath: string): AsyncIterable<string> {
   const entries = await readdir(dirPath)
