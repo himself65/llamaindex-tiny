@@ -1,13 +1,9 @@
 {
-  "name": "llamaindex-tiny",
-  "description": "A tiny version of the llamaindex",
+  "name": "@llamaindex/root",
   "type": "module",
-  "devDependencies": {
-    "@types/node": "^20.12.12",
-    "typescript": "^5.4.5"
-  },
   "packageManager": "pnpm@9.1.1",
-  "dependencies": {
-    "memoize": "^10.0.0"
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4"
   }
 }

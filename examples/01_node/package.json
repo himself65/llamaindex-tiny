@@ -1,0 +1,13 @@
+{
+  "name": "@llamaindex/example-01_node",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "llamaindex-tiny": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tsx": "^4.10.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "llamaindex-tiny",
+  "description": "A tiny version of the llamaindex",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/type/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build:esm": "swc src -d dist --strip-leading-paths",
+    "build:type": "tsc -p tsconfig.json",
+    "dev": "concurrently \"pnpm run build:esm --watch\" \"pnpm run build:type --watch\""
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.7",
+    "@types/node": "^20.12.12",
+    "chokidar": "^3.6.0",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "memoize": "^10.0.0"
+  }
+}
